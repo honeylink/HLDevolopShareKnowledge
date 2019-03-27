@@ -1,0 +1,20 @@
+假设：原工程名为tim_delay修改成AD_change
+
+
+第一，将工程中后缀名为“dep，ewd，ewp，eww”的这四个文件直接重命名为自己想要的名字，如原工程名字是tim_delay，现在重命名为AD_change。
+
+第二，打开一个空的记事本，将后缀名为eww的文件拖进去，记事本显示内容如下：
+
+
+  
+    $WS_DIR$\tim_delay.ewp
+  
+  
+
+然后将上面tim_delay换成AD_change。
+
+第三，再将后缀名为ewp的文件拖进记事本，用替换把文件中tim_delay.hex换成AD_change.hex。同理后缀名为dep的文件同上照做。
+	也可以直接打开eww并将编译输出文件进行修改。
+
+
+经过以上步骤再打开工程，你会发现工程名已经修改成功。

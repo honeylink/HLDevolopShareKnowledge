@@ -1,0 +1,39 @@
+1. 下载安装doxygen
+
+2. 打开doxygenWizard程序；
+
+3. Wizard设置
+   a. Poject 设置工程名，版本，源代码路径，是否递归，结果存放目录；
+   b. Output 设置输出的文件格式有：HTML LATEX
+4. Expert设置
+   a. Project 设置输出的doxygen文件格式编码，有UTF-8 GB2312/GBK等；设置输出的语言；
+   b. Build  设置解析的内容， 有EXTRACT_ALL解析所有，但是不包括EXTRACT_PRIVATE和EXTRACT_STATIC,
+             其它的选项有：EXTRACT_LOCAL_CLASSES EXTRACT_LOCAL_METHODS
+   c. Input 设置输入的编码，默认为UTF-8，可选GB2312/GBK
+   d. Source Brower SOURCE_BROWSER提供代码浏览功能，INLINE_SOURCE选择输出的文档中嵌入代码；
+
+5. 文件和函数注释如下
+/**
+ *@file xx.c 描述
+ *@version 1.0
+ *@author Wenqiang.Liu
+ *@date 2013-10-11
+ */
+
+/**
+ *@brief 函数说明
+ *
+ *function description
+ *
+ *@param a xxxxxxx
+ *@param b yyyyyyy
+ *@return zzzzzzzzzzzz
+ */
+
+6. 输出的latex文件转成PDF文件过程如下：
+   下载CTEX
+
+7. 与graphviz的配合: 先安装graphviz在安装doxygen。
+   在doxygen中的diagrams中选择use dot tool from the graphviz package
+   在expert中断dot 中设置dot_path为graphviz安装目录的bin目录
+   

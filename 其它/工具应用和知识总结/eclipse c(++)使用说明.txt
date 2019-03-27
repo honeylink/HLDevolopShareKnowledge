@@ -1,0 +1,21 @@
+1. 修改字体windows->preferences->general->appearence->colors and fonts->basic->text font
+   选择courier new 能够解决中文显示问题；
+
+3. 拼写检查：windows->preferences->general->editors->text editors;
+
+4. 错误提示设置：windows->preferences->general->editors->annotations;
+
+5. 快捷键设置：windows->preferences->general->keys；
+
+6. 内容实时提示： windows->preferences->c/c++->editor->content assist;
+
+7. 关键字语法 颜色和字体配置：windows->preferences->c/c++->editor->syntax coloring；
+
+8. 项目预包含头文件路径：项目->properties->c/c++ build->settings->tool settings
+  ->cross gcc compiler->includes
+
+9. 项目预定义变量：项目->properties->c/c++ build->settings->tool settings
+  ->cross gcc compiler->symbols
+
+10. 如果发现某个包含文件无效，即解析不了文件，可直接在项目->properties->c/c++ build->settings->tool settings->->cross gcc compiler->inclcuds添加指定头文件，使用绝对路径
+  
