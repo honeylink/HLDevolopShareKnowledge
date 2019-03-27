@@ -1,0 +1,14 @@
+1. reset->resset handler call __iar_program_start 
+
+2. arm/src/lib/thumb/cstartup_M.s __iar_program_start call  
+					__iar_init_core	//实现在库中
+					__iar_init_vfp	//实现在库中
+					__cmain
+
+
+3. arm/src/lib/thumb/cmain.s __cmain call
+					__low_level_init
+					根据__low_level_init返回值决定是否call __iar_data_init3
+					?l1
+					main
+					exit
